@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Souvenirs & Nostalgie</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #f5efe6;
+            color: #4b3b2f;
+        }
+
+        header {
+            background: linear-gradient(rgba(70, 50, 35, 0.7),
+                                        rgba(70, 50, 35, 0.7)),
+                        url("https://images.unsplash.com/photo-1517841905240-472988babdf9")
+                        center/cover;
+
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 22px;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #3f3025;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #d9b98c;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: #634936;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        .souvenirs {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #72543d;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .quote {
+            background-color: #d9c2a3;
+            text-align: center;
+            font-size: 25px;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        .memory {
+            background-color: #fffaf3;
+            text-align: center;
+        }
+
+        .memory p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 19px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #3f3025;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Souvenirs & Nostalgie</h1>
+        <p>« Certains souvenirs ne vieillissent jamais. »</p>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#souvenirs">Souvenirs</a>
+        <a href="#nostalgie">Nostalgie</a>
+        <a href="#citation">Citation</a>
+    </nav>
+
+    <!-- Introduction -->
+    <section id="accueil">
+        <h2>Les souvenirs</h2>
+
+        <p class="intro">
+            Les souvenirs sont des fragments de notre passé qui restent
+            gravés dans notre mémoire. Ils peuvent être liés à une personne,
+            un lieu, une odeur, une chanson ou simplement à un moment heureux.
+            Ils nous permettent de revivre certaines émotions et de ne jamais
+            oublier les instants importants de notre vie.
+        </p>
+    </section>
+
+    <!-- Cartes -->
+    <section id="souvenirs">
+        <h2>Des souvenirs précieux</h2>
+
+        <div class="souvenirs">
+
+            <div class="card">
+                <h3>👨‍👩‍👧‍👦 La famille</h3>
+
+                <p>
+                    Les repas en famille, les fêtes, les discussions et les
+                    moments passés avec nos proches deviennent souvent des
+                    souvenirs que nous gardons toute notre vie.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🏡 L'enfance</h3>
+
+                <p>
+                    Les jeux, l'école, les vacances et les journées sans
+                    soucis sont des souvenirs qui nous rappellent une époque
+                    plus simple et pleine d'insouciance.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌅 Les voyages</h3>
+
+                <p>
+                    Un voyage peut laisser une impression inoubliable :
+                    un paysage, une ville, une rencontre ou une aventure
+                    peuvent rester dans notre mémoire pendant des années.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Nostalgie -->
+    <section id="nostalgie" class="memory">
+
+        <h2>La nostalgie</h2>
+
+        <p>
+            La nostalgie est ce sentiment particulier que nous ressentons
+            lorsque nous pensons à une époque passée. Elle peut être douce
+            et agréable, mais parfois aussi accompagnée d'une certaine
+            tristesse. Elle nous rappelle les personnes, les lieux et les
+            moments que nous ne pouvons plus retrouver exactement comme
+            avant.
+        </p>
+
+    </section>
+
+    <!-- Citation -->
+    <section id="citation" class="quote">
+
+        <p>
+            « On ne se souvient pas des jours,
+            on se souvient des moments. »
+        </p>
+
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+
+        <p>
+            © 2026 — Souvenirs & Nostalgie
+        </p>
+
+        <p>
+            Un voyage à travers les souvenirs du passé.
+        </p>
+
+    </footer>
+
+</body>
+<h1>je m'appelle mohamed yahia okayli je travaille sur mon pc pour faire ce projet j'espere que vous l'aimez et c'est tout  merci pour votre attention</h1>
+</html>
